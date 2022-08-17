@@ -1,13 +1,17 @@
+<<<<<<< HEAD
 ember-sortablejs
 ==============================================================================
 [![Build Status](https://travis-ci.org/SortableJS/ember-sortablejs.svg?branch=master)](https://travis-ci.org/SortableJS/ember-sortablejs)
 [![Ember Observer Score](https://emberobserver.com/badges/ember-sortablejs.svg)](https://emberobserver.com/addons/ember-sortablejs)
+=======
+# ember-sortablejs
+>>>>>>> f8a0530 (v3.15.0...v4.6.0)
 
 This addon allows you to use drag and drop in your ember application using [SortableJS/Sortable](https://github.com/SortableJS/Sortable)
 
-Compatibility
-------------------------------------------------------------------------------
+## Compatibility
 
+<<<<<<< HEAD
 * Ember.js v3.13 or above
 * Ember CLI v3.13 or above
 * Node.js v10 or above
@@ -15,6 +19,15 @@ Compatibility
 Installation
 ------------------------------------------------------------------------------
 > **NOTE**: The beta version is out. Please give me a hand and test it out.
+=======
+* Ember.js v3.24 or above
+* Ember CLI v3.24 or above
+* Node.js v14 or above
+
+
+## Installation
+
+>>>>>>> f8a0530 (v3.15.0...v4.6.0)
 ```
 ember install ember-sortablejs@beta
 ```
@@ -35,8 +48,7 @@ Currently supported:
 - [ ] Multi Drag
 - [ ] Nested List
 
-Usage
-------------------------------------------------------------------------------
+## Usage
 
 ```hbs
 {{!-- this.list = [{ name: 'item one' }, { name: 'item two' },..]  --}}
@@ -53,11 +65,16 @@ Usage
 </SortableJs>
 ```
 
+<<<<<<< HEAD
 How it works
 ------------------------------------------------------------------------------
 SortableJs works by manipulating the DOM directly this is NOT compatible with
 the Glimmer VM. To mitigate this we need tu use SortableJs as a middle man and use
 the events it emits to update state and prevent the DOM manipulation the library does.
+=======
+
+## Contributing
+>>>>>>> f8a0530 (v3.15.0...v4.6.0)
 
 This is accomplished by maintaining an internal list. This list is a copy of the
 array supplied via `@items`. The events `onStart`, `onEnd`, `onUpdate`, `onAdd`,
@@ -69,6 +86,7 @@ When SortableJs emits we update the list and the cache to make changes that will
 the DOM. The addon will ***yield*** an array of objects. Each object contains the key `value`,
 which is the original object supplied via `@items`.
 
+<<<<<<< HEAD
 I you have ideas on how to approach this better. Please open an issue 😄
 
 Caveats
@@ -147,5 +165,8 @@ v2
 ```
 License
 ------------------------------------------------------------------------------
+=======
+## License
+>>>>>>> f8a0530 (v3.15.0...v4.6.0)
 
 This project is licensed under the [GPL-3.0 License](LICENSE.md).
